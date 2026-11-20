@@ -41,6 +41,8 @@ In this tutorial we will be working with an English language word
 dictionary.  First we will create a directory in our repo for the
 source data, then use curl to download it.
 
+> Note: current directory should be the git repo you created in step 2
+
 ```shell
 mkdir source_data
 curl https://storage.googleapis.com/docclab-turtles-datasets/dictionary.txt -o source_data/dictionary.txt
@@ -74,6 +76,8 @@ Aaron
 DVC needs some basic metadata files to track the state of the
 artifacts it manages.  Let's create them now:
 
+> Note: current directory should be the git repo you created in step 2
+
 ```shell
 dvc init .
 ```
@@ -101,6 +105,8 @@ What's next?
 ```
 
 ### 5. Add our source data to DVC
+
+> Note: current directory should be the git repo you created in step 2
 
 Now we add `dictionary.txt` to DVC:
 
@@ -223,7 +229,10 @@ Example output:
 
 ### 6. Move the data into DuckDB so we can analyze it
 
+> Note: current directory should be the git repo you created in step 2
+
 ```shell
+mkdir -p db
 duckdb db/dictionary.duckdb -c "create table words (word varchar); insert into words from read_csv('source_data/dictionary.txt');"
 ```
 
@@ -402,6 +411,8 @@ Example output:
 
 ### 7. Add some results
 
+> Note: current directory should be the git repo you created in step 2
+
 Let's do some statistical analysis of our data: what does the
 distribution of word length look like?  DuckDB makes this sort of
 thing pretty easy:
@@ -505,6 +516,8 @@ git commit -m 'Add a plot.'
 ```
 
 ### 8. Push DVC Artifacts to a Remote
+
+> Note: current directory should be the git repo you created in step 2
 
 For others to reproduce our work, we need to make the DVC tracked
 artifacts (and experimental results) publically available.  This is
