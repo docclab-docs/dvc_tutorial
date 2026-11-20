@@ -21,6 +21,7 @@ about:
 
 1. [DVC](https://doc.dvc.org/install)
 2. [DuckDB](https://duckdb.org/docs/2.0/installation?platform=linux&environment=cli)
+   - Note: I built this tutorial with duckdb version 1.5.6 (not the latest), so YMMV
 3. [Kuva](https://github.com/Psy-Fer/kuva) (`cargo install kuva --features cli`)
    - [Rust/Cargo](https://rust-lang.org/tools/install/)
 
@@ -563,7 +564,6 @@ stages:
     - db/dictionary.duckdb
     outs:
     - figures/word_count_hist.pdf
-
 ```
 
 And now `dvc repro`!
