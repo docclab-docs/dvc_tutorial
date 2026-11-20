@@ -20,6 +20,7 @@ about:
 ### 1. Install DVC (and other tools used in this tutorial)
 
 1. [DVC](https://doc.dvc.org/install)
+   - Recommend the `pipx` method: `pipx install dvc`
 2. [DuckDB](https://duckdb.org/docs/2.0/installation?platform=linux&environment=cli)
    - Note: I built this tutorial with duckdb version 1.5.6 (not the latest), so YMMV
 3. [Kuva](https://github.com/Psy-Fer/kuva) (`cargo install kuva --features cli`)
@@ -64,6 +65,8 @@ aardvark
 aardwolf
 Aaron
 ```
+
+> **Be sure to check the downloaded size and the output of head to make sure the file arrived ok!**
 
 ### 4. Initialize DVC in our repo
 
