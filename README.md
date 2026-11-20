@@ -23,8 +23,12 @@ about:
    - Recommend the `pipx` method: `pipx install dvc`
 2. [DuckDB](https://duckdb.org/docs/2.0/installation?platform=linux&environment=cli)
    - Note: I built this tutorial with duckdb version 1.5.6 (not the latest), so YMMV
-3. [Kuva](https://github.com/Psy-Fer/kuva) (`cargo install kuva --features cli`)
+3. [Kuva](https://github.com/Psy-Fer/kuva) (`cargo install kuva --features cli,full`)
    - [Rust/Cargo](https://rust-lang.org/tools/install/)
+
+> **Note:** Later steps will fail if you don't install kuva with
+> `full` feature support, which includes output formats like png and
+> pdf!
 
 ### 2. Create a repo
 
