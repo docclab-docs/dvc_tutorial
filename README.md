@@ -66,7 +66,8 @@ aardwolf
 Aaron
 ```
 
-> **Be sure to check the downloaded size and the output of head to make sure the file arrived ok!**
+> **Be sure to check the downloaded size and the output of head to
+> make sure the file arrived ok!**
 
 ### 4. Initialize DVC in our repo
 
